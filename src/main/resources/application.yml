@@ -2,3 +2,5 @@ spring:
   application:
     name: rudy-chat
 
+server:
+  port: 8081
