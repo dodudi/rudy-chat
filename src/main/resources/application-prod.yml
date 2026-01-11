@@ -26,3 +26,11 @@ spring:
           max-idle: 8
           min-idle: 0
           max-wait: -1ms
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: chat-group
+      auto-offset-reset: latest
+    producer:
+      acks: 1
+      retries: 3
