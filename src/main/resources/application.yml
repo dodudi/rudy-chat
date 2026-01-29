@@ -9,5 +9,6 @@ spring:
     producer:
       acks: 1
       retries: 3
+
 server:
   port: 8081
